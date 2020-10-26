@@ -70,12 +70,14 @@ form {
     margin: auto;
 }
 
-h3  {
+p  {
     position: relative;
     top: 15%;
     text-align: center;
 
 }
+
+
 
 footer {
     display: flex;
@@ -142,4 +144,12 @@ footer {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+}
+
+#wins, #top5, #top10, #kills {
+    /* background-color: lightgray; */
+    font-weight: bold;
+    font: var(--logo-font);
+    color: deeppink;
+    padding-left: 10px;
 }
