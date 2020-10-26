@@ -1,2 +1,0 @@
-# project-one
-first project

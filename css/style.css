@@ -1,0 +1,110 @@
+/* Google Fonts Press Start 2p */
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+:root {
+    --primary-brand-color: #da01f3;
+    --secondary-brand-color: #3600f4;
+    --accent-color: #f1d64e;
+    --shadow-black: #000000;
+    --shadow-gray: #6d6d6d;
+    --logo-font: 'Luckiest Guy', Cursive, Helvetica;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Helvetica;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+header,
+footer {
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 65px;
+    background-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    font-family: var(--logo-font);
+}
+
+header>h1 {
+    display: flex;
+    justify-content: center;
+    color: var(--primary-brand-color);
+    text-shadow: 1px 1px 3px white;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    
+}
+
+form {
+    margin: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+#search {
+    width: 400px;
+    height: 50px;
+    border-radius: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--primary-brand-color);
+    font-family: var(--logo-font);
+    color: var(--accent-color);
+}
+
+.card {
+    width: 400px;
+    height: 50px;
+    border-radius: 12px;
+    margin: 50px;
+    border: 1px solid var(--primary-brand-color);
+    font-family: var(--logo-font);
+    color: var(--primary-brand-color);
+    box-shadow: 1px 1px 12px 1px var(--shadow-gray);
+    background-color: var(--secondary-brand-color);
+    font-size: 24px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 15px 1px var(--primary-brand-color);
+}
+
+#collection {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.outline {
+    border: 1px dotted var(--secondary-brand-color);
+}
+
+.flex-ctr {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
