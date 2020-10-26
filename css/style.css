@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
 :root {
-    --primary-brand-color: #da01f3;
-    --secondary-brand-color: #3600f4;
+    --primary-brand-color: #8d3ea5;
+    --secondary-brand-color: #57c2df;
     --accent-color: #f1d64e;
     --shadow-black: #000000;
     --shadow-gray: #6d6d6d;
@@ -13,6 +13,13 @@
 * {
     box-sizing: border-box;
     margin: 0;
+}
+
+body {
+    background-image: url('Images/backgroundImage.png');
+    background-repeat: no-repeat;
+    background-attachment: center;
+    background-size: cover;
 }
 
 body {
@@ -29,7 +36,7 @@ footer {
     align-items: center;
     color: white;
     width: 100%;
-    height: 65px;
+    height: 50px;
     background-color: black;
 }
 
@@ -52,11 +59,22 @@ main {
     display: flex;
     flex-direction: column;
     align-items: space-around;
-    
+    background-image: url('Images/backgroundImage.png') repeat 0 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
 }
 
 form {
     margin: auto;
+}
+
+h3  {
+    position: relative;
+    top: 15%;
+    text-align: center;
+
 }
 
 footer {
@@ -65,14 +83,29 @@ footer {
 }
 
 #search {
-    width: 400px;
-    height: 50px;
+    width: 500px;
     border-radius: 12px;
-    flex-direction: column;
+    border-color: var(--secondary-brand-color);
+    flex-direction: row;
     align-items: flex-start;
     background-color: var(--primary-brand-color);
     font-family: var(--logo-font);
     color: var(--accent-color);
+}
+
+#box:hover {
+    box-shadow: 1px 1px 15px 1px var(--primary-brand-color);
+    cursor:crosshair ;
+}
+
+#box {
+    width: 150px;
+    border-radius: 12px;
+    align-items: center;
+    background-color: var(--primary-brand-color);
+    font-family: var(--logo-font);
+    color: var(--accent-color);
+
 }
 
 .card {
@@ -92,6 +125,8 @@ footer {
 
 .card:hover {
     box-shadow: 1px 1px 15px 1px var(--primary-brand-color);
+    cursor:crosshair ;
+    transform: scale(1.2, 1.2);
 }
 
 #collection {
