@@ -15,29 +15,22 @@
     margin: 0;
 }
 
+body,
+#wrapper {
+    width: 800px;
+    margin: 0 auto;
+}
+
 body {
+    font-family: var(--logo-font);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-image: url('Images/backgroundImage.png');
     background-repeat: no-repeat;
     background-attachment: center;
     background-size: cover;
-}
-
-body {
-    font-family: Helvetica;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-
-header,
-footer {
-    display: flex;
-    align-items: center;
-    color: white;
-    width: 100%;
-    height: 50px;
-    background-color: black;
+    background-size: 100% 100%;
 }
 
 header {
@@ -47,14 +40,22 @@ header {
     font-family: var(--logo-font);
 }
 
-header>h1 {
+header,
+footer {
     display: flex;
     justify-content: center;
-    color: var(--primary-brand-color);
-    text-shadow: 1px 1px 3px white;
+    align-content: center;
+    color: white;
+    width: 100%;
+    width: 800px;
+    height: 50px;
+    font-family: var(--logo-font);
+    background-color: black;
+    text-align: center;
+    vertical-align: baseline;
 }
 
-main {
+main.flex-ctr {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -66,28 +67,11 @@ main {
 
 }
 
-form {
-    margin: auto;
-}
-
-p  {
-    position: relative;
-    top: 15%;
-    text-align: center;
-
-}
-
-
-
-footer {
-    display: flex;
-    justify-content: center;
-}
-
 #search {
     width: 500px;
-    border-radius: 12px;
+    height: 50px;
     border-color: var(--secondary-brand-color);
+    border-radius: 12px;
     flex-direction: row;
     align-items: flex-start;
     background-color: var(--primary-brand-color);
@@ -95,22 +79,97 @@ footer {
     color: var(--accent-color);
 }
 
-#box:hover {
-    box-shadow: 1px 1px 15px 1px var(--primary-brand-color);
-    cursor:crosshair ;
-}
-
-#box {
-    width: 150px;
+input,
+#submit {
+    height: 50px;
     border-radius: 12px;
-    align-items: center;
+    border-color: var(--secondary-brand-color);
+    flex-direction: row;
+    align-items: flex-start;
     background-color: var(--primary-brand-color);
     font-family: var(--logo-font);
     color: var(--accent-color);
 
 }
 
-.card {
+#search::after {
+    width: 500px;
+    height: 50px;
+    border-color: var(--secondary-brand-color);
+    border-radius: 12px;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: var(--primary-brand-color);
+    font-family: var(--logo-font);
+    color: var(--accent-color);
+}
+
+input,
+#submit::after {
+    height: 50px;
+    border-radius: 12px;
+    border-color: var(--secondary-brand-color);
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: var(--primary-brand-color);
+    font-family: var(--logo-font);
+    color: var(--accent-color);
+
+}
+
+#box:hover {
+    box-shadow: 1px 1px 15px 1px var(--primary-brand-color);
+    cursor: crosshair;
+}
+
+form {
+    margin: auto;
+    margin-top: inherit;
+}
+
+img {
+    max-width: 100%;
+    margin: auto;
+    padding-bottom: 20%;
+}
+
+footer,
+p {
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+
+/* #box {
+    width: 150px;
+    height: 50px;
+    border-radius: 12px;
+    align-items: center;
+    background-color: var(--primary-brand-color);
+    font-family: var(--logo-font);
+    color: var(--accent-color);
+} */
+
+
+/* .flex-ctr {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+} */
+/* #wins,
+#top5,
+#top10,
+#kills {
+    font-weight: bold;
+    font: var(--logo-font);
+    color: deeppink;
+    padding-left: 10px;
+} */
+
+/* .card {
     width: 400px;
     height: 50px;
     border-radius: 12px;
@@ -123,33 +182,15 @@ footer {
     font-size: 24px;
     text-transform: capitalize;
     text-align: center;
-}
+} */
 
-.card:hover {
+/* .card:hover {
     box-shadow: 1px 1px 15px 1px var(--primary-brand-color);
-    cursor:crosshair ;
+    cursor: crosshair;
     transform: scale(1.2, 1.2);
-}
+} */
 
-#collection {
-    flex-direction: column;
-    align-items: flex-start;
-}
 
-.outline {
+/* .outline {
     border: 1px dotted var(--secondary-brand-color);
-}
-
-.flex-ctr {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-#wins, #top5, #top10, #kills {
-    /* background-color: lightgray; */
-    font-weight: bold;
-    font: var(--logo-font);
-    color: deeppink;
-    padding-left: 10px;
-}
+} */
