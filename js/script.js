@@ -22,8 +22,4 @@ function handleGetData(event) {
             }
         )
 }
-
-
-
 $('form').on("submit", handleGetData)
-

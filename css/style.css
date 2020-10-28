@@ -106,31 +106,6 @@ input,
 
 }
 
-/* #search::after {
-    width: 500px;
-    height: 50px;
-    border-color: var(--secondary-brand-color);
-    border-radius: 12px;
-    flex-direction: row;
-    align-items: flex-start;
-    background-color: var(--primary-brand-color);
-    font-family: var(--logo-font);
-    color: var(--accent-color);
-}
-
-input,
-#submit::after {
-    height: 50px;
-    border-radius: 12px;
-    border-color: var(--secondary-brand-color);
-    flex-direction: row;
-    align-items: flex-start;
-    background-color: var(--primary-brand-color);
-    font-family: var(--logo-font);
-    color: var(--accent-color);
-
-} */
-
 #search:hover {
     box-shadow: 1px 1px 15px 1px var(--primary-brand-color);
     cursor: crosshair;
@@ -187,55 +162,3 @@ img {
     color: white;
 }
 
-
-/* #box {
-    width: 150px;
-    height: 50px;
-    border-radius: 12px;
-    align-items: center;
-    background-color: var(--primary-brand-color);
-    font-family: var(--logo-font);
-    color: var(--accent-color);
-} */
-
-
-/* .flex-ctr {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-} */
-/* #wins,
-#top5,
-#top10,
-#kills {
-    font-weight: bold;
-    font: var(--logo-font);
-    color: deeppink;
-    padding-left: 10px;
-} */
-
-/* .card {
-    width: 400px;
-    height: 50px;
-    border-radius: 12px;
-    margin: 50px;
-    border: 1px solid var(--primary-brand-color);
-    font-family: var(--logo-font);
-    color: var(--primary-brand-color);
-    box-shadow: 1px 1px 12px 1px var(--shadow-gray);
-    background-color: var(--secondary-brand-color);
-    font-size: 24px;
-    text-transform: capitalize;
-    text-align: center;
-} */
-
-/* .card:hover {
-    box-shadow: 1px 1px 15px 1px var(--primary-brand-color);
-    cursor: crosshair;
-    transform: scale(1.2, 1.2);
-} */
-
-
-/* .outline {
-    border: 1px dotted var(--secondary-brand-color);
-} */
