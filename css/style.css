@@ -1,4 +1,3 @@
-/* Google Fonts Press Start 2p */
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
 :root {
@@ -15,7 +14,6 @@
     margin: 0;
 }
 
-body,
 #wrapper {
     width: 800px;
     margin: 0 auto;
@@ -49,22 +47,9 @@ footer {
     background-color: transparent;
 }
 
-.flex-ctr {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.topnav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+/* ===================Div Elements===================== */
 
 div a {
-    border-color: var(--secondary-brand-color);
-    border-style: ridge;
-    border-radius: 12px;
     font: var(--logo-font);
     color: white;
     background-color: transparent;
@@ -73,12 +58,12 @@ div a {
     /* box-shadow: 0 0 15px white; */
 }
 
-/* div button:hover {
-    color: var(--accent-color);
-    box-shadow: 0 0 5px var(--secondary-brand-color);
-    text-shadow: 0 0 5px var(--accent-color);
-    box-shadow: 1 1 15px white;
-} */
+/* ===================Main elements===================== */
+form {
+    margin: auto;
+    margin-top: inherit;
+}
+
 
 #search {
     width: 500px;
@@ -91,9 +76,9 @@ div a {
     background-color: transparent;
     font-family: var(--logo-font);
     color: var(--accent-color);
+    margin-top: 10px;
 }
 
-input,
 #submit {
     height: 50px;
     border-radius: 12px;
@@ -106,20 +91,9 @@ input,
 
 }
 
-#search:hover {
-    box-shadow: 1px 1px 15px 1px var(--primary-brand-color);
-    cursor: crosshair;
-}
-
-input,
+#search:hover,
 #submit:hover {
-    box-shadow: 1px 1px 15px 1px var(--primary-brand-color);
     cursor: crosshair;
-}
-
-form {
-    margin: auto;
-    margin-top: inherit;
 }
 
 img {
@@ -128,6 +102,19 @@ img {
     padding-bottom: 20%;
 }
 
+
+
+.flex-ctr {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 .fa {
     padding: 20px;
@@ -139,6 +126,7 @@ img {
 }
 
 .fa:hover {
+    cursor: crosshair;
     opacity: 0.7;
 }
 
@@ -161,4 +149,3 @@ img {
 
     color: white;
 }
-

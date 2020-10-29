@@ -1,4 +1,4 @@
-console.log("It's working!")
+// console.log("It's working!")
 
 function handleGetData(event) {
     event.preventDefault();
@@ -20,3 +20,9 @@ function handleGetData(event) {
         )
 }
 $('form').on("submit", handleGetData)
+
+// $(document).ready(function () {
+//     $("#image").click(function () {
+//         $("#collection").fadeToggle(1000);
+//     });
+// });
