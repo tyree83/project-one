@@ -57,8 +57,6 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* font-family: var(--logo-font);
-    color: white; */
 }
 
 div a {
@@ -73,12 +71,12 @@ div a {
     /* box-shadow: 0 0 15px white; */
 }
 
-div button:hover {
+/* div button:hover {
     color: var(--accent-color);
     box-shadow: 0 0 5px var(--secondary-brand-color);
     text-shadow: 0 0 5px var(--accent-color);
     box-shadow: 1 1 15px white;
-}
+} */
 
 #search {
     width: 500px;
