@@ -15,6 +15,7 @@ function handleGetData(event) {
                 $("#image").attr("src", userData.image)
             },
             (error) => {
+                alert  ("That User ID is incorrect")
                 console.log("bad request: ", error)
             }
         )
