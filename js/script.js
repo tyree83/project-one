@@ -6,7 +6,7 @@ function handleGetData(event) {
     const searchText = $("#search").val()
 
     $.ajax({
-            url: `https://fortnite-api.com/v1/stats/br/v2/${searchText}?image=all`
+            url: `https://fortnite-api.com/v1/stats/br/v2/?name=${searchText}&image=all`
         })
         .then(
             (data) => {

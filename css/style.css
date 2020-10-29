@@ -34,6 +34,8 @@ body {
     background-size: 100% 100%;
 }
 
+/* ===================Header/Footer elements===================== */
+
 header,
 footer {
     display: flex;
