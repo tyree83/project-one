@@ -15,15 +15,15 @@ function handleGetData(event) {
                 $("#image").attr("src", userData.image)
             },
             (error) => {
-                alert  ("That User ID is incorrect")
+                alert("That User ID is incorrect")
                 console.log("bad request: ", error)
             }
         )
 }
 $('form').on("submit", handleGetData)
 
-// $(document).ready(function () {
-//     $("#image").click(function () {
-//         $("#collection").fadeToggle(1000);
-//     });
-// });
+$(document).ready(function(){
+    $("#submit").click(function(){
+      $("#image").fadeToggle(3000);
+    });
+  });
